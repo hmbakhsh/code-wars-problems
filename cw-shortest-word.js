@@ -25,5 +25,10 @@ function findShort(s) {
 // console.log(findShort(testStr));
 
 // top solution
+function findShort(s){
+    return Math.min(...s.split(" ").map (s => s.length));
+}
+
+// spread operator in JS
 let arr = [1,6,4,3,5];
 console.log(Math.max(...arr));
